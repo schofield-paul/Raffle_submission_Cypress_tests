@@ -1,1 +1,1 @@
-# selenium_tests
+# Cypress tests for raffle application
