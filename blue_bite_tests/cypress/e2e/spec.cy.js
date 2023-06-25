@@ -1,5 +1,7 @@
 const testData = require('../../data/testData.js');
 
+Cypress.session.clearCurrentSessionData();
+
 describe('Validate positive user flow once', () => {
   testData.forEach((data, index) => {
     it(`Test ${index + 1}: clicks the link "type"`, () => {
