@@ -9,7 +9,7 @@ Cypress.session.clearCurrentSessionData();
 
 describe('Validate positive user flow once (no optional reason param)', () => {
   testData1.forEach((data, index) => {
-    it(`Test ${index + 1}: Submit valid input; return count 1`, () => {
+    it(`Test ${index + 1}: Submit valid input; return count`, () => {
       cy.visit('/');
 
       // Get name input, type into it
@@ -18,7 +18,7 @@ describe('Validate positive user flow once (no optional reason param)', () => {
       // Get email input, type into it
       cy.get('#input-4').type(data.email);
 
-      // Get email input, type into it
+      // Get age input, type into it
       cy.get('#input-8').type(data.age);
 
       // Submit form
@@ -30,6 +30,9 @@ describe('Validate positive user flow once (no optional reason param)', () => {
 
       if (index !== testData1.length - 1) {
         cy.reload();
+      } else {
+        cy.clearCookies();
+        cy.clearLocalStorage();
       }
     });
   });
@@ -46,7 +49,7 @@ describe('Validate positive user flow once with optional reason param', () => {
       // Get email input, type into it
       cy.get('#input-4').type(data.email);
 
-      // Get email input, type into it
+      // Get age input, type into it
       cy.get('#input-8').type(data.age);
 
       // Get Reason input, type into it
@@ -61,6 +64,9 @@ describe('Validate positive user flow once with optional reason param', () => {
 
       if (index !== testData1.length - 1) {
         cy.reload();
+      } else {
+        cy.clearCookies();
+        cy.clearLocalStorage();
       }
     });
   });
@@ -68,7 +74,7 @@ describe('Validate positive user flow once with optional reason param', () => {
 
 describe('Validate positive user flow with age boundary conditions', () => {
   testData3.forEach((data, index) => {
-    it(`Test ${index + 1}: Submit valid input; return count 1`, () => {
+    it(`Test ${index + 1}: Submit valid input; return count`, () => {
       cy.visit('/');
 
       // Get name input, type into it
@@ -77,7 +83,7 @@ describe('Validate positive user flow with age boundary conditions', () => {
       // Get email input, type into it
       cy.get('#input-4').type(data.email);
 
-      // Get email input, type into it
+      // Get age input, type into it
       cy.get('#input-8').type(data.age);
 
       // Get Reason input, type into it
@@ -92,6 +98,9 @@ describe('Validate positive user flow with age boundary conditions', () => {
 
       if (index !== testData3.length - 1) {
         cy.reload();
+      } else {
+        cy.clearCookies();
+        cy.clearLocalStorage();
       }
     });
   });
@@ -108,7 +117,7 @@ describe('Validate positive user flow with twenty five submissions', () => {
       // Get email input, type into it
       cy.get('#input-4').type(data.email);
 
-      // Get email input, type into it
+      // Get age input, type into it
       cy.get('#input-8').type(data.age);
 
       // Get Reason input, type into it
@@ -123,6 +132,9 @@ describe('Validate positive user flow with twenty five submissions', () => {
 
       if (index !== testData4.length - 1) {
         cy.reload();
+      } else {
+        cy.clearCookies();
+        cy.clearLocalStorage();
       }
     });
   });

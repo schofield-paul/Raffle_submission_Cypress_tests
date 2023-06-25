@@ -20,7 +20,7 @@ Cypress.session.clearCurrentSessionData();
 //       // Get email input, type into it
 //       cy.get('#input-4').type(data.email);
 
-//       // Get email input, type into it
+//       // Get age input, type into it
 //       if (index !== testData1.length - 1) {
 //         // Not the last iteration, type the age input
 //         cy.get('#input-8').type(data.age);
@@ -52,7 +52,7 @@ Cypress.session.clearCurrentSessionData();
 //       // Get email input, type into it
 //       cy.get('#input-4').type(data.email);
 
-//       // Get email input, type into it
+//       // Get age input, type into it
 //       // Not the last iteration, type the age input
 //       cy.get('#input-8').type(data.age);
 
@@ -83,7 +83,7 @@ Cypress.session.clearCurrentSessionData();
 //       // Get email input, type into it
 //       cy.get('#input-4').type(data.email);
 
-//       // Get email input, type into it
+//       // Get age input, type into it
 //       // Not the last iteration, type the age input
 //       cy.get('#input-8').type(data.age);
 
@@ -113,7 +113,7 @@ Cypress.session.clearCurrentSessionData();
 //       // Get email input, type into it
 //       //cy.get('#input-4').type(data.email);
 
-//       // Get email input, type into it
+//       // Get age input, type into it
 //       // Not the last iteration, type the age input
 //       // cy.get('#input-8').type(data.age);
 
