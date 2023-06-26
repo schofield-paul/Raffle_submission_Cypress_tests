@@ -52,13 +52,13 @@ const testData2 = [
   },
   {
     name: 'Alice',
-    email: 'aliceexamplecom',
+    email: ' ',
     age: 20,
     reason: 'I am feeling Lucky!',
   },
   {
     name: 'Alice',
-    email: 'aliceexamplecom',
+    email: '7',
     age: 20,
     reason: 'I am feeling Lucky!',
   },

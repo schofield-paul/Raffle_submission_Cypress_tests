@@ -7,7 +7,7 @@ const {
 
 Cypress.session.clearCurrentSessionData();
 
-describe('Validate positive user flow once (no optional reason param)', () => {
+describe('Validate positive user flow once (no reason param)', () => {
   testData1.forEach((data, index) => {
     it(`Test ${index + 1}: Submit valid input; return count`, () => {
       cy.visit('/');
