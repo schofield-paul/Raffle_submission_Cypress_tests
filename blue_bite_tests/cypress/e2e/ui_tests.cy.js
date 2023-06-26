@@ -22,7 +22,7 @@ describe('Check red highlight condition for failed input fields', () => {
   it(`Check if required fields turn red in failed condition'`, () => {
     cy.visit('/');
 
-    // Get name field temporarily input
+    // Temporary input for name field (can delete post button validation)
     cy.get('#input-3').type('Adam');
 
     // Submit form
